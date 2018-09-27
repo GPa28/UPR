@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using UltimatePowerRankings.Models;
 
 namespace UltimatePowerRankings.Data
 {
@@ -12,5 +13,7 @@ namespace UltimatePowerRankings.Data
             : base(options)
         {
         }
+
+        public DbSet<TopTenList> TopTenLists { get; set; }
     }
 }
