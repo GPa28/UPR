@@ -1,0 +1,88 @@
+﻿@model UltimatePowerRankings.Models.TopTenList
+
+@{
+    ViewData["Title"] = "CreateTopTenList";
+}
+
+<h2>CreateTopTenList</h2>
+
+<h4>TopTenList</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="CreateTopTenList">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Id" class="control-label"></label>
+                <input asp-for="Id" class="form-control" />
+                <span asp-validation-for="Id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Title" class="control-label"></label>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="One" class="control-label"></label>
+                <input asp-for="One" class="form-control" />
+                <span asp-validation-for="One" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Two" class="control-label"></label>
+                <input asp-for="Two" class="form-control" />
+                <span asp-validation-for="Two" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Three" class="control-label"></label>
+                <input asp-for="Three" class="form-control" />
+                <span asp-validation-for="Three" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Four" class="control-label"></label>
+                <input asp-for="Four" class="form-control" />
+                <span asp-validation-for="Four" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Five" class="control-label"></label>
+                <input asp-for="Five" class="form-control" />
+                <span asp-validation-for="Five" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Six" class="control-label"></label>
+                <input asp-for="Six" class="form-control" />
+                <span asp-validation-for="Six" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Seven" class="control-label"></label>
+                <input asp-for="Seven" class="form-control" />
+                <span asp-validation-for="Seven" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Eight" class="control-label"></label>
+                <input asp-for="Eight" class="form-control" />
+                <span asp-validation-for="Eight" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Nine" class="control-label"></label>
+                <input asp-for="Nine" class="form-control" />
+                <span asp-validation-for="Nine" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Ten" class="control-label"></label>
+                <input asp-for="Ten" class="form-control" />
+                <span asp-validation-for="Ten" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
